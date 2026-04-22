@@ -74,20 +74,6 @@ sim_lab02: lab02 build_educore
 	@echo "[SIM] Running Lab 02 simulation..."
 	$(VVP) test_Educore.vvp +TEST_CASE=Lab02/test_lab02.mem
 
-# ========================================================================
-
-# Lab 03: The Pipeline Detective
-
-# ========================================================================
-
-.PHONY: lab03 sim_lab03
-
-sim_lab03: build_pipeline
-
-@echo "[SIM] Running Lab 03 Pipeline Detective simulation..."
-
-$(VVP) test_Pipeline.vvp +TEST_CASE=Lab03/mystery.mem
-
 # =============================================================================
 # Lab 04: Pipeline Hazards (Uses PIPELINED processor!)
 # =============================================================================
